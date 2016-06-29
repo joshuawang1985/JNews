@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0550A901BD28A80ED12A35B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3F2846AE2A0F9EB82016BA /* libPods.a */; };
+		D20C1E3A1D06615300A93CE3 /* JNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D20C1E391D06615300A93CE3 /* JNetworkTools.m */; };
+		D20C1E3D1D06B19300A93CE3 /* JNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20C1E3C1D06B19300A93CE3 /* JNavController.m */; };
+		D20C1E401D06BEC800A93CE3 /* JMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20C1E3F1D06BEC800A93CE3 /* JMainViewController.m */; };
+		D20C1E421D06C8C300A93CE3 /* NewsURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20C1E411D06C8C300A93CE3 /* NewsURLs.plist */; };
+		D24AD4D31D07ADC900C6B15F /* JTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D24AD4D21D07ADC900C6B15F /* JTitleLabel.m */; };
+		D24AD4D61D08075C00C6B15F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24AD4D51D08075C00C6B15F /* News.storyboard */; };
+		D24AD4D91D0808B600C6B15F /* JNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24AD4D81D0808B600C6B15F /* JNewsTableViewController.m */; };
+		D25507DD1D1D0E5D00C0AA69 /* JReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D25507DC1D1D0E5D00C0AA69 /* JReplyCell.m */; };
+		D25507E01D1D0EAF00C0AA69 /* JReplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D25507DF1D1D0EAF00C0AA69 /* JReplyModel.m */; };
+		D25507E31D1D103300C0AA69 /* JReplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25507E21D1D103300C0AA69 /* JReplyVC.m */; };
+		D25507E61D1FC8FE00C0AA69 /* JReplyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D25507E51D1FC8FE00C0AA69 /* JReplyHeader.m */; };
+		D25507E81D1FCBEB00C0AA69 /* JReplyHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25507E71D1FCBEB00C0AA69 /* JReplyHeader.xib */; };
+		D25581D91D05893D00317517 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25581D81D05893D00317517 /* main.m */; };
+		D25581DC1D05893D00317517 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25581DB1D05893D00317517 /* AppDelegate.m */; };
+		D25581E51D05893D00317517 /* JNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25581E31D05893D00317517 /* JNews.xcdatamodeld */; };
+		D25581E71D05893D00317517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25581E61D05893D00317517 /* Assets.xcassets */; };
+		D25581EA1D05893D00317517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25581E81D05893D00317517 /* LaunchScreen.storyboard */; };
+		D25581F21D05899C00317517 /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D25581F11D05899C00317517 /* HYQiHei-50J.ttf */; };
+		D25581FA1D0589BF00317517 /* JButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D25581F51D0589BF00317517 /* JButton.m */; };
+		D25581FB1D0589BF00317517 /* JMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25581F71D0589BF00317517 /* JMainTabBarVC.m */; };
+		D25581FC1D0589BF00317517 /* JTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25581F91D0589BF00317517 /* JTabBarView.m */; };
+		D25582031D0589DD00317517 /* JAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D25582001D0589DD00317517 /* JAdManager.m */; };
+		D25582041D0589DD00317517 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D25582021D0589DD00317517 /* UIView+Frame.m */; };
+		D272F66F1D20FA9F00039816 /* JDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D272F66E1D20FA9F00039816 /* JDetailVC.m */; };
+		D272F6721D20FF8700039816 /* JDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D272F6711D20FF8700039816 /* JDetailModel.m */; };
+		D272F6751D20FFD100039816 /* JDetailImgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D272F6741D20FFD100039816 /* JDetailImgModel.m */; };
+		D2A0B2A11D0ADCB2006471C0 /* JNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A0B2A01D0ADCB2006471C0 /* JNewsModel.m */; };
+		D2A0B2A41D0AE184006471C0 /* JNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A0B2A31D0AE184006471C0 /* JNewsCell.m */; };
+		D2D00D4B1D2394750026B2EE /* JDetails.css in Resources */ = {isa = PBXBuildFile; fileRef = D2D00D4A1D2394750026B2EE /* JDetails.css */; };
+		D2D00D4E1D23A5990026B2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D00D4C1D23A5990026B2EE /* Main.storyboard */; };
+		D2E5FAA71D1102580025B056 /* JPhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E5FAA61D1102580025B056 /* JPhotoSet.m */; };
+		D2E5FAAA1D1108FC0025B056 /* JPhotoSetDeail.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E5FAA91D1108FC0025B056 /* JPhotoSetDeail.m */; };
+		D2E5FAAE1D111EA30025B056 /* JPhotoSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E5FAAD1D111EA30025B056 /* JPhotoSetVC.m */; };
+		D2E5FAB21D1139B90025B056 /* JHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E5FAB11D1139B90025B056 /* JHttpManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F3F2846AE2A0F9EB82016BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C24D84FB6E4043AA5179DFC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEB121E0039A9275CDA1917 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D20C1E381D06615300A93CE3 /* JNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNetworkTools.h; sourceTree = "<group>"; };
+		D20C1E391D06615300A93CE3 /* JNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNetworkTools.m; sourceTree = "<group>"; };
+		D20C1E3B1D06B19300A93CE3 /* JNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNavController.h; sourceTree = "<group>"; };
+		D20C1E3C1D06B19300A93CE3 /* JNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNavController.m; sourceTree = "<group>"; };
+		D20C1E3E1D06BEC800A93CE3 /* JMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMainViewController.h; sourceTree = "<group>"; };
+		D20C1E3F1D06BEC800A93CE3 /* JMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMainViewController.m; sourceTree = "<group>"; };
+		D20C1E411D06C8C300A93CE3 /* NewsURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewsURLs.plist; sourceTree = "<group>"; };
+		D24AD4D11D07ADC900C6B15F /* JTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTitleLabel.h; sourceTree = "<group>"; };
+		D24AD4D21D07ADC900C6B15F /* JTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTitleLabel.m; sourceTree = "<group>"; };
+		D24AD4D51D08075C00C6B15F /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		D24AD4D71D0808B600C6B15F /* JNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNewsTableViewController.h; sourceTree = "<group>"; };
+		D24AD4D81D0808B600C6B15F /* JNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNewsTableViewController.m; sourceTree = "<group>"; };
+		D25507DB1D1D0E5D00C0AA69 /* JReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JReplyCell.h; sourceTree = "<group>"; };
+		D25507DC1D1D0E5D00C0AA69 /* JReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JReplyCell.m; sourceTree = "<group>"; };
+		D25507DE1D1D0EAF00C0AA69 /* JReplyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JReplyModel.h; sourceTree = "<group>"; };
+		D25507DF1D1D0EAF00C0AA69 /* JReplyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JReplyModel.m; sourceTree = "<group>"; };
+		D25507E11D1D103300C0AA69 /* JReplyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JReplyVC.h; sourceTree = "<group>"; };
+		D25507E21D1D103300C0AA69 /* JReplyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JReplyVC.m; sourceTree = "<group>"; };
+		D25507E41D1FC8FE00C0AA69 /* JReplyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JReplyHeader.h; sourceTree = "<group>"; };
+		D25507E51D1FC8FE00C0AA69 /* JReplyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JReplyHeader.m; sourceTree = "<group>"; };
+		D25507E71D1FCBEB00C0AA69 /* JReplyHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JReplyHeader.xib; sourceTree = "<group>"; };
+		D25581D41D05893D00317517 /* JNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25581D81D05893D00317517 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D25581DA1D05893D00317517 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D25581DB1D05893D00317517 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D25581E41D05893D00317517 /* JNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JNews.xcdatamodel; sourceTree = "<group>"; };
+		D25581E61D05893D00317517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25581E91D05893D00317517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D25581EB1D05893D00317517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25581F11D05899C00317517 /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
+		D25581F41D0589BF00317517 /* JButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JButton.h; path = JNews/JButton.h; sourceTree = "<group>"; };
+		D25581F51D0589BF00317517 /* JButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JButton.m; path = JNews/JButton.m; sourceTree = "<group>"; };
+		D25581F61D0589BF00317517 /* JMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMainTabBarVC.h; path = JNews/JMainTabBarVC.h; sourceTree = "<group>"; };
+		D25581F71D0589BF00317517 /* JMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMainTabBarVC.m; path = JNews/JMainTabBarVC.m; sourceTree = "<group>"; };
+		D25581F81D0589BF00317517 /* JTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTabBarView.h; path = JNews/JTabBarView.h; sourceTree = "<group>"; };
+		D25581F91D0589BF00317517 /* JTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTabBarView.m; path = JNews/JTabBarView.m; sourceTree = "<group>"; };
+		D25581FF1D0589DD00317517 /* JAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAdManager.h; path = JNews/JAdManager.h; sourceTree = "<group>"; };
+		D25582001D0589DD00317517 /* JAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAdManager.m; path = JNews/JAdManager.m; sourceTree = "<group>"; };
+		D25582011D0589DD00317517 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "JNews/UIView+Frame.h"; sourceTree = "<group>"; };
+		D25582021D0589DD00317517 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "JNews/UIView+Frame.m"; sourceTree = "<group>"; };
+		D272F66D1D20FA9F00039816 /* JDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDetailVC.h; sourceTree = "<group>"; };
+		D272F66E1D20FA9F00039816 /* JDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDetailVC.m; sourceTree = "<group>"; };
+		D272F6701D20FF8700039816 /* JDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDetailModel.h; sourceTree = "<group>"; };
+		D272F6711D20FF8700039816 /* JDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDetailModel.m; sourceTree = "<group>"; };
+		D272F6731D20FFD100039816 /* JDetailImgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDetailImgModel.h; sourceTree = "<group>"; };
+		D272F6741D20FFD100039816 /* JDetailImgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDetailImgModel.m; sourceTree = "<group>"; };
+		D2A0B29F1D0ADCB2006471C0 /* JNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNewsModel.h; sourceTree = "<group>"; };
+		D2A0B2A01D0ADCB2006471C0 /* JNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNewsModel.m; sourceTree = "<group>"; };
+		D2A0B2A21D0AE184006471C0 /* JNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNewsCell.h; sourceTree = "<group>"; };
+		D2A0B2A31D0AE184006471C0 /* JNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNewsCell.m; sourceTree = "<group>"; };
+		D2D00D4A1D2394750026B2EE /* JDetails.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = JDetails.css; path = JNews/JDetails.css; sourceTree = "<group>"; };
+		D2D00D4D1D23A5990026B2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JNews/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2E5FAA51D1102580025B056 /* JPhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPhotoSet.h; sourceTree = "<group>"; };
+		D2E5FAA61D1102580025B056 /* JPhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPhotoSet.m; sourceTree = "<group>"; };
+		D2E5FAA81D1108FC0025B056 /* JPhotoSetDeail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPhotoSetDeail.h; sourceTree = "<group>"; };
+		D2E5FAA91D1108FC0025B056 /* JPhotoSetDeail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPhotoSetDeail.m; sourceTree = "<group>"; };
+		D2E5FAAC1D111EA30025B056 /* JPhotoSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPhotoSetVC.h; sourceTree = "<group>"; };
+		D2E5FAAD1D111EA30025B056 /* JPhotoSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPhotoSetVC.m; sourceTree = "<group>"; };
+		D2E5FAB01D1139B90025B056 /* JHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHttpManager.h; sourceTree = "<group>"; };
+		D2E5FAB11D1139B90025B056 /* JHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHttpManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25581D11D05893D00317517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0550A901BD28A80ED12A35B5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED90C2FD7AD7ED89271DEB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C24D84FB6E4043AA5179DFC /* Pods.debug.xcconfig */,
+				CFEB121E0039A9275CDA1917 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CE0947AA9AD5835C9B74CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3F2846AE2A0F9EB82016BA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24AD4D41D08073400C6B15F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4D51D08075C00C6B15F /* News.storyboard */,
+				D24AD4D71D0808B600C6B15F /* JNewsTableViewController.h */,
+				D24AD4D81D0808B600C6B15F /* JNewsTableViewController.m */,
+				D2A0B29F1D0ADCB2006471C0 /* JNewsModel.h */,
+				D2A0B2A01D0ADCB2006471C0 /* JNewsModel.m */,
+				D2A0B2A21D0AE184006471C0 /* JNewsCell.h */,
+				D2A0B2A31D0AE184006471C0 /* JNewsCell.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		D25507DA1D1D0E3700C0AA69 /* Reply */ = {
+			isa = PBXGroup;
+			children = (
+				D25507DB1D1D0E5D00C0AA69 /* JReplyCell.h */,
+				D25507DC1D1D0E5D00C0AA69 /* JReplyCell.m */,
+				D25507DE1D1D0EAF00C0AA69 /* JReplyModel.h */,
+				D25507DF1D1D0EAF00C0AA69 /* JReplyModel.m */,
+				D25507E11D1D103300C0AA69 /* JReplyVC.h */,
+				D25507E21D1D103300C0AA69 /* JReplyVC.m */,
+				D25507E41D1FC8FE00C0AA69 /* JReplyHeader.h */,
+				D25507E51D1FC8FE00C0AA69 /* JReplyHeader.m */,
+				D25507E71D1FCBEB00C0AA69 /* JReplyHeader.xib */,
+			);
+			name = Reply;
+			sourceTree = "<group>";
+		};
+		D25581CB1D05893D00317517 = {
+			isa = PBXGroup;
+			children = (
+				D272F66C1D20FA7000039816 /* Detail */,
+				D25507DA1D1D0E3700C0AA69 /* Reply */,
+				D2E5FAAF1D1139960025B056 /* other */,
+				D2E5FAA41D11022C0025B056 /* NewsPhotos */,
+				D24AD4D41D08073400C6B15F /* News */,
+				D25581FD1D0589C400317517 /* Other */,
+				D25581F31D0589A100317517 /* Main */,
+				D25581D61D05893D00317517 /* JNews */,
+				D25581D51D05893D00317517 /* Products */,
+				0ED90C2FD7AD7ED89271DEB7 /* Pods */,
+				7CE0947AA9AD5835C9B74CA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D25581D51D05893D00317517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25581D41D05893D00317517 /* JNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25581D61D05893D00317517 /* JNews */ = {
+			isa = PBXGroup;
+			children = (
+				D25581DA1D05893D00317517 /* AppDelegate.h */,
+				D25581DB1D05893D00317517 /* AppDelegate.m */,
+				D25581E61D05893D00317517 /* Assets.xcassets */,
+				D25581E81D05893D00317517 /* LaunchScreen.storyboard */,
+				D25581E31D05893D00317517 /* JNews.xcdatamodeld */,
+				D25581D71D05893D00317517 /* Supporting Files */,
+			);
+			path = JNews;
+			sourceTree = "<group>";
+		};
+		D25581D71D05893D00317517 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D20C1E411D06C8C300A93CE3 /* NewsURLs.plist */,
+				D25581F11D05899C00317517 /* HYQiHei-50J.ttf */,
+				D25581EB1D05893D00317517 /* Info.plist */,
+				D25581D81D05893D00317517 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D25581F31D0589A100317517 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D25581F41D0589BF00317517 /* JButton.h */,
+				D25581F51D0589BF00317517 /* JButton.m */,
+				D25581F61D0589BF00317517 /* JMainTabBarVC.h */,
+				D25581F71D0589BF00317517 /* JMainTabBarVC.m */,
+				D25581F81D0589BF00317517 /* JTabBarView.h */,
+				D25581F91D0589BF00317517 /* JTabBarView.m */,
+				D20C1E3B1D06B19300A93CE3 /* JNavController.h */,
+				D20C1E3C1D06B19300A93CE3 /* JNavController.m */,
+				D20C1E3E1D06BEC800A93CE3 /* JMainViewController.h */,
+				D20C1E3F1D06BEC800A93CE3 /* JMainViewController.m */,
+				D24AD4D11D07ADC900C6B15F /* JTitleLabel.h */,
+				D24AD4D21D07ADC900C6B15F /* JTitleLabel.m */,
+				D2D00D4C1D23A5990026B2EE /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D25581FD1D0589C400317517 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D20C1E391D06615300A93CE3 /* JNetworkTools.m */,
+				D20C1E381D06615300A93CE3 /* JNetworkTools.h */,
+				D25581FF1D0589DD00317517 /* JAdManager.h */,
+				D25582001D0589DD00317517 /* JAdManager.m */,
+				D25582011D0589DD00317517 /* UIView+Frame.h */,
+				D25582021D0589DD00317517 /* UIView+Frame.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		D272F66C1D20FA7000039816 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D2D00D4A1D2394750026B2EE /* JDetails.css */,
+				D272F66D1D20FA9F00039816 /* JDetailVC.h */,
+				D272F66E1D20FA9F00039816 /* JDetailVC.m */,
+				D272F6701D20FF8700039816 /* JDetailModel.h */,
+				D272F6711D20FF8700039816 /* JDetailModel.m */,
+				D272F6731D20FFD100039816 /* JDetailImgModel.h */,
+				D272F6741D20FFD100039816 /* JDetailImgModel.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		D2E5FAA41D11022C0025B056 /* NewsPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				D2E5FAA51D1102580025B056 /* JPhotoSet.h */,
+				D2E5FAA61D1102580025B056 /* JPhotoSet.m */,
+				D2E5FAA81D1108FC0025B056 /* JPhotoSetDeail.h */,
+				D2E5FAA91D1108FC0025B056 /* JPhotoSetDeail.m */,
+				D2E5FAAC1D111EA30025B056 /* JPhotoSetVC.h */,
+				D2E5FAAD1D111EA30025B056 /* JPhotoSetVC.m */,
+			);
+			name = NewsPhotos;
+			sourceTree = "<group>";
+		};
+		D2E5FAAF1D1139960025B056 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				D2E5FAB01D1139B90025B056 /* JHttpManager.h */,
+				D2E5FAB11D1139B90025B056 /* JHttpManager.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25581D31D05893D00317517 /* JNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25581EE1D05893D00317517 /* Build configuration list for PBXNativeTarget "JNews" */;
+			buildPhases = (
+				7E522701AE0D096B88AC07C9 /* Check Pods Manifest.lock */,
+				D25581D01D05893D00317517 /* Sources */,
+				D25581D11D05893D00317517 /* Frameworks */,
+				D25581D21D05893D00317517 /* Resources */,
+				76D12368F1ED9D35A025E8AC /* Embed Pods Frameworks */,
+				B918E1D7B9B6342CA0653F0B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JNews;
+			productName = JNews;
+			productReference = D25581D41D05893D00317517 /* JNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25581CC1D05893D00317517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "王昊";
+				TargetAttributes = {
+					D25581D31D05893D00317517 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y993Q6UASX;
+					};
+				};
+			};
+			buildConfigurationList = D25581CF1D05893D00317517 /* Build configuration list for PBXProject "JNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25581CB1D05893D00317517;
+			productRefGroup = D25581D51D05893D00317517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25581D31D05893D00317517 /* JNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25581D21D05893D00317517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25581F21D05899C00317517 /* HYQiHei-50J.ttf in Resources */,
+				D24AD4D61D08075C00C6B15F /* News.storyboard in Resources */,
+				D25507E81D1FCBEB00C0AA69 /* JReplyHeader.xib in Resources */,
+				D2D00D4E1D23A5990026B2EE /* Main.storyboard in Resources */,
+				D2D00D4B1D2394750026B2EE /* JDetails.css in Resources */,
+				D25581EA1D05893D00317517 /* LaunchScreen.storyboard in Resources */,
+				D20C1E421D06C8C300A93CE3 /* NewsURLs.plist in Resources */,
+				D25581E71D05893D00317517 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76D12368F1ED9D35A025E8AC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E522701AE0D096B88AC07C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B918E1D7B9B6342CA0653F0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25581D01D05893D00317517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E5FAAA1D1108FC0025B056 /* JPhotoSetDeail.m in Sources */,
+				D24AD4D31D07ADC900C6B15F /* JTitleLabel.m in Sources */,
+				D25582041D0589DD00317517 /* UIView+Frame.m in Sources */,
+				D24AD4D91D0808B600C6B15F /* JNewsTableViewController.m in Sources */,
+				D272F66F1D20FA9F00039816 /* JDetailVC.m in Sources */,
+				D25507E61D1FC8FE00C0AA69 /* JReplyHeader.m in Sources */,
+				D2A0B2A11D0ADCB2006471C0 /* JNewsModel.m in Sources */,
+				D20C1E401D06BEC800A93CE3 /* JMainViewController.m in Sources */,
+				D25507E31D1D103300C0AA69 /* JReplyVC.m in Sources */,
+				D2E5FAB21D1139B90025B056 /* JHttpManager.m in Sources */,
+				D25581E51D05893D00317517 /* JNews.xcdatamodeld in Sources */,
+				D2E5FAA71D1102580025B056 /* JPhotoSet.m in Sources */,
+				D272F6721D20FF8700039816 /* JDetailModel.m in Sources */,
+				D20C1E3D1D06B19300A93CE3 /* JNavController.m in Sources */,
+				D25507E01D1D0EAF00C0AA69 /* JReplyModel.m in Sources */,
+				D272F6751D20FFD100039816 /* JDetailImgModel.m in Sources */,
+				D25581FC1D0589BF00317517 /* JTabBarView.m in Sources */,
+				D25581DC1D05893D00317517 /* AppDelegate.m in Sources */,
+				D25581FA1D0589BF00317517 /* JButton.m in Sources */,
+				D25581FB1D0589BF00317517 /* JMainTabBarVC.m in Sources */,
+				D2E5FAAE1D111EA30025B056 /* JPhotoSetVC.m in Sources */,
+				D20C1E3A1D06615300A93CE3 /* JNetworkTools.m in Sources */,
+				D25582031D0589DD00317517 /* JAdManager.m in Sources */,
+				D25507DD1D1D0E5D00C0AA69 /* JReplyCell.m in Sources */,
+				D25581D91D05893D00317517 /* main.m in Sources */,
+				D2A0B2A41D0AE184006471C0 /* JNewsCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D25581E81D05893D00317517 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25581E91D05893D00317517 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D00D4C1D23A5990026B2EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D00D4D1D23A5990026B2EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D25581EC1D05893D00317517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D25581ED1D05893D00317517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D25581EF1D05893D00317517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24D84FB6E4043AA5179DFC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.JNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d197036c-8987-4839-979c-4ba445722fbe";
+			};
+			name = Debug;
+		};
+		D25581F01D05893D00317517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEB121E0039A9275CDA1917 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.JNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d197036c-8987-4839-979c-4ba445722fbe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25581CF1D05893D00317517 /* Build configuration list for PBXProject "JNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25581EC1D05893D00317517 /* Debug */,
+				D25581ED1D05893D00317517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25581EE1D05893D00317517 /* Build configuration list for PBXNativeTarget "JNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25581EF1D05893D00317517 /* Debug */,
+				D25581F01D05893D00317517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D25581E31D05893D00317517 /* JNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D25581E41D05893D00317517 /* JNews.xcdatamodel */,
+			);
+			currentVersion = D25581E41D05893D00317517 /* JNews.xcdatamodel */;
+			path = JNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D25581CC1D05893D00317517 /* Project object */;
+}
