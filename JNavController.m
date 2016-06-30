@@ -14,6 +14,7 @@
 {
     UINavigationBar* nav = [UINavigationBar appearance];
     [nav setTintColor:[UIColor redColor]];
+    
 }
 
 @end

@@ -9,14 +9,17 @@
 #import "JMainViewController.h"
 #import "JTitleLabel.h"
 #import "JNewsTableViewController.h"
+#import "UIView+Frame.h"
 
 @interface JMainViewController ()<UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *smallScrollView;
 @property (strong, nonatomic) IBOutlet UIScrollView *bigScrollView;
 
-
+@property (strong, nonatomic) UIButton* rightItem;
 @property (strong, nonatomic) NSArray* arrayList;
+
+@property(nonatomic,assign,getter=isWeatherShow)BOOL weatherShow;
 
 
 @end
@@ -30,6 +33,14 @@
         _arrayList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"NewsURLs.plist" ofType:nil ]];
     }
     return _arrayList;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.rightItem.hidden = NO;
+    self.rightItem.transform = CGAffineTransformIdentity;
+    [self.rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
+
 }
 
 - (void)viewDidLoad
@@ -51,8 +62,45 @@
     vc.view.frame = self.bigScrollView.bounds;
     [self.bigScrollView  addSubview:vc.view];
     
-    //JTitleLabel* lbl = [self.smallScrollView.subviews firstObject];
-    //lbl.scale = 1.0;
+    UIButton* rightItem = [[UIButton alloc] init];
+    self.rightItem = rightItem;
+    UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
+    //[win addSubview:rightItem];
+    [rightItem addTarget:self action:@selector(rightItemClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    rightItem.y = 20;
+    rightItem.width = 45;
+    rightItem.height = 45;
+    rightItem.x = [UIScreen mainScreen].bounds.size.width - rightItem.width;
+    [rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
+
+}
+
+- (void)rightItemClick
+{
+    if (self.isWeatherShow) {
+        
+        [UIView animateWithDuration:0.1 animations:^{
+            self.rightItem.transform = CGAffineTransformRotate(self.rightItem.transform, M_1_PI * 5);
+            
+        } completion:^(BOOL finished) {
+            [self.rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
+        }];
+    }else{
+        
+        [self.rightItem setImage:[UIImage imageNamed:@"223"] forState:UIControlStateNormal];
+
+        [UIView animateWithDuration:0.2 animations:^{
+            self.rightItem.transform = CGAffineTransformRotate(self.rightItem.transform, -M_1_PI * 6);
+            
+        } completion:^(BOOL finished) {
+            
+            [UIView animateWithDuration:0.1 animations:^{
+                self.rightItem.transform = CGAffineTransformRotate(self.rightItem.transform, M_1_PI );
+            }];
+        }];
+    }
+    self.weatherShow = !self.isWeatherShow;
 }
 
 - (void)addController

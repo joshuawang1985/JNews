@@ -139,6 +139,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D221C3C11D250C1600AB1A70 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
 		D24AD4D41D08073400C6B15F /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +179,7 @@
 		D25581CB1D05893D00317517 = {
 			isa = PBXGroup;
 			children = (
+				D221C3C11D250C1600AB1A70 /* Weather */,
 				D272F66C1D20FA7000039816 /* Detail */,
 				D25507DA1D1D0E3700C0AA69 /* Reply */,
 				D2E5FAAF1D1139960025B056 /* other */,
